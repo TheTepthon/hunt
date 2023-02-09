@@ -273,7 +273,7 @@ async def _(event):
             if "Available" in isav:
                 await asyncio.sleep(1)
                 try:
-                    await sedthon(functions.channels.UpdateUsernameRequest(
+                    except Exception as c:
                         channel=ch, username=username))
                     await event.client.send_message(event.chat_id, f'''**
 ⌯ 𝘛𝘖 𝘐𝘕𝘚𝘛𝘈𝘓𝘓 𝘛𝘏𝘌 𝘚𝘖𝘜𝘙𝘊𝘌 ↣ ( @N1111V , @S8Y8S )
@@ -281,7 +281,7 @@ async def _(event):
 - ⎱UserName: ↣ (@{username}❳! **
     ''')
                     break
-                except telethon.errors.rpcerrorlist.UsernameInvalidError:
+                except Exception as c:
                     with open("banned.txt", "a") as f:
                         f.write(f"\n{username}")
                 except Exception as eee:
