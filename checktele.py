@@ -280,7 +280,6 @@ async def _(event):
 -- -- -- -- -- -- -- -- -- -- -- -- --
 - ⎱UserName: ↣ (@{username}❳! **
     ''')
-                    break
                 except Exception as c:
                     with open("banned.txt", "a") as f:
                         f.write(f"{username}-{c}\n")
