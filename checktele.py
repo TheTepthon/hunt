@@ -273,7 +273,7 @@ async def _(event):
             if "Available" in isav:
                 await asyncio.sleep(1)
                 try:
-                    except Exception as c:
+                    await sedthon(functions.channels.UpdateUsernameRequest(
                         channel=ch, username=username))
                     await event.client.send_message(event.chat_id, f'''**
 ⌯ 𝘛𝘖 𝘐𝘕𝘚𝘛𝘈𝘓𝘓 𝘛𝘏𝘌 𝘚𝘖𝘜𝘙𝘊𝘌 ↣ ( @N1111V , @S8Y8S )
