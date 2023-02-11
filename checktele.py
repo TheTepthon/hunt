@@ -279,7 +279,7 @@ async def _(event):
 ⌯ 𝘛𝘖 𝘐𝘕𝘚𝘛𝘈𝘓𝘓 𝘛𝘏𝘌 𝘚𝘖𝘜𝘙𝘊𝘌 ↣ ( @N1111V , @S8Y8S )
 -- -- -- -- -- -- -- -- -- -- -- -- --
 - ⎱UserName: ↣ (@{username}❳! **
-    ''')
+''')
                 except Exception as c:
                     with open("banned.txt", "a") as f:
                         f.write(f"{username}-{c}\n")
