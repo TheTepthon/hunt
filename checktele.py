@@ -279,11 +279,12 @@ async def _(event):
 ⌯ 𝘛𝘖 𝘐𝘕𝘚𝘛𝘈𝘓𝘓 𝘛𝘏𝘌 𝘚𝘖𝘜𝘙𝘊𝘌 ↣ ( @N1111V , @S8Y8S )
 -- -- -- -- -- -- -- -- -- -- -- -- --
 - ⎱UserName: ↣ (@{username}❳! **
-''')
+    ''')
+                    break
                 except Exception as c:
                     with open("banned.txt", "a") as f:
                         f.write(f"\n{username}")
-                except Exception as eee
+                except Exception as eee:
                     await sedthon.send_message(event.chat_id, f'''خطأ مع {username}
     الخطأ :
     {str(eee)}''')
