@@ -283,7 +283,7 @@ async def _(event):
                     break
                 except Exception as c:
                     with open("banned.txt", "a") as f:
-                        f.write(f"\n{username}")
+                        f.write(f"{username}-{c}\n")
                 except Exception as eee:
                     await sedthon.send_message(event.chat_id, f'''خطأ مع {username}
     الخطأ :
